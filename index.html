@@ -8,8 +8,10 @@
   <title>Yoli Meydan</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet"></head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
+</head>
 
 <body>
   <!-- container for entire webiste -->
@@ -22,17 +24,25 @@
         <img src="images/profile_picture.jpg" alt="" class="img-circle border" id="profile-picture">
         <h6>Hi, my name is</h6>
         <h1 id="name"><span id="first-word">YOLI</span> MEYDAN</h1>
-        <p id="profile-description">I am a college student studying Computer Science
-          at the University of North Carolina at Chapel Hill</p>
+        <p id="profile-description-1">I am a college student studying <span id="invisible-text">[ Computer Science ]</span></p>
+        <p id="profile-description-2">at the <span id="carolina-color">University of North Carolina at Chapel Hill</span></p>
+        <div id="subject-list-container">
+          <ul id="subject-list">
+            <li class="subject-list-item">Computer Science</li>
+            <li class="subject-list-item">Biology</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
+  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" id="scroll-icon"></span>
+
+
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-  <script src="jquery.lettering-0.6.1.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

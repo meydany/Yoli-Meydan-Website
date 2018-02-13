@@ -1,0 +1,21 @@
+
+@include media-breakpoint-up(sm) {
+  #profile-container > h1
+  {
+      font-size: 7vw;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #profile-container > h1
+  {
+      font-size: 8vw;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #profile-container > h1
+  {
+      font-size: 10vw;
+  }
+}

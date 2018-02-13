@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html,
+body
+{
+    overflow-x: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+#page-header
+{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+#image-container
+{
+    overflow: hidden;
+
+    width: 100%;
+    height: 40vh;
+}
+
+#image
+{
+    position: relative;
+    z-index: -1;
+    left: -1vw;
+
+    width: 102vw; /* Account for blurred edges */
+    height: 100%;
+
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    -webkit-filter: blur(5px);
+       -moz-filter: blur(5px);
+         -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+            filter: blur(5px);
+}
+
+#profile-container
+{
+    width: 40%;
+    height: 60vh;
+}
+
+#profile-picture
+{
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+
+    width: 15vmax;
+    height: auto;
+
+    -webkit-transform: translate(-50%, -50%);
+
+    border: .5vw solid #99badd;
+    -webkit-border-radius: 500px;
+       -moz-border-radius: 500px;
+            border-radius: 500px;
+    box-shadow: 6px 6px 20px grey;
+}
+
+#profile-container > h6
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vmax;
+    font-weight: 300;
+
+    position: absolute;
+    top: 57%;
+    left: 50vw;
+
+    width: 100%;
+
+    -webkit-transform: translate(-50%, 0);
+    text-align: center;
+
+    color: black;
+}
+
+#profile-container > h1
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4vmax;
+    font-weight: 300;
+
+    position: absolute;
+    top: 62%;
+    left: 50vw;
+
+    width: 100%;
+
+    -webkit-transform: translate(-50%, 0);
+    text-align: center;
+
+    color: black;
+}
+
+#profile-container > h1 > #first-word
+{
+    font-weight: 500;
+
+    color: #99badd;
+}
+
+#profile-container > #profile-description-1
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vmax;
+    font-weight: 300;
+
+    position: absolute;
+    top: 75vh;
+    left: 50vw;
+
+    min-width: 50%;
+    max-width: 100%;
+
+    -webkit-transform: translate(-50%, 0);
+    text-align: center;
+    white-space: nowrap;
+
+    color: black;
+}
+
+#profile-container > #profile-description-1 > #invisible-text
+{
+    visibility: hidden;
+}
+
+#profile-container > #profile-description-2
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vmax;
+    font-weight: 300;
+
+    position: absolute;
+    top: 82vh;
+    left: 50vw;
+
+    min-width: 50%;
+    max-width: 100%;
+
+    -webkit-transform: translate(-50%, 0);
+    text-align: center;
+
+    color: black;
+}
+
+#profile-container > #profile-description-2 > #carolina-color
+{
+    color: #99badd;
+}
+
+#subject-list-container
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vmax;
+    font-weight: 300;
+
+    position: absolute;
+    top: 78vh;
+    left: 65vmax;
+
+    overflow: hidden;
+
+    width: 20vmax;
+    max-height: 3vmax;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    white-space: nowrap;
+
+    color: black;
+}
+
+#subject-list
+{
+    margin-right: 2vmin;
+    margin-left: -2vmin;
+
+    list-style: none;
+
+    -webkit-animation-name: change;
+            animation-name: change;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    text-align: left;
+}
+
+#subject-list-container::before
+{
+    left: 0;
+
+    content: '{';
+}
+#subject-list-container::after
+{
+    position: absolute;
+    right: 0;
+
+    content: '}';
+}
+
+#subject-list-container::before,
+#subject-list-container::after
+{
+    font-size: 2.5vmax;
+    font-weight: 700;
+    line-height: auto;
+
+    position: absolute;
+    top: -.5vmax;
+
+    -webkit-animation-name: opacity;
+            animation-name: opacity;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+
+    color: #99badd;
+}
+
+@-webkit-keyframes opacity
+{
+    0%,
+    100%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes change
+{
+    0%,
+    46%,
+    100%
+    {
+        transform: translate3d(0,0,0);
+    }
+    50%,
+    96%
+    {
+        transform: translate3d(0,-50%,0);
+    }
+}
