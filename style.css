@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html,
+body
+{
+    overflow-x: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+#page-header {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#image-container
+{
+    overflow: hidden;
+
+    width: 100%;
+    height: 40vh;
+}
+
+#image
+{
+    position: relative;
+    z-index: -1;
+    left: -1vw;
+
+    width: 102vw; /* Account for blurred edges */
+    height: 100%;
+
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    -webkit-filter: blur(5px);
+       -moz-filter: blur(5px);
+         -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+            filter: blur(5px);
+}
+
+#profile-picture
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+    width: 15%;
+    height: auto;
+
+    -webkit-transform: translate(-50%, -50%);
+
+    border: .5vw solid white;
+    -webkit-border-radius: 500px;
+       -moz-border-radius: 500px;
+            border-radius: 500px;
+    box-shadow: 6px 6px 20px grey;
+}
+
+#profile-container {
+  height: 60vh;
+  width: 40%;
+}
+
+#profile-container > h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
+
+  position: absolute;
+  width: 100%;
+  top: 57vh;
+  left: 50vw;
+
+  -webkit-transform: translate(-50%, 0);
+  text-align: center;
+
+  color: black;
+}
+
+#profile-container > h1
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 4vw;
+
+    position: absolute;
+    width: 100%;
+    top: 62vh;
+    left: 50vw;
+
+    -webkit-transform: translate(-50%, 0);
+    text-align: center;
+
+    color: black;
+}
+
+#profile-container > h1 > #first-word {
+  font-weight: 500;
+}
+
+#profile-container > #profile-description {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
+
+  position: absolute;
+  max-width: 100%;
+  min-width: 50%;
+  top: 75vh;
+  left: 50vw;
+
+  -webkit-transform: translate(-50%, 0);
+  text-align: center;
+
+  color: black;
+}
